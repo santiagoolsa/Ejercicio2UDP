@@ -24,7 +24,6 @@ public class Servidor {
             new Thread(() -> procesarCliente(socket, paquete)).start();
         }
     }
-
     private static void procesarCliente(DatagramSocket socket, DatagramPacket paquete) {
         try {
             // se obtiene el mensaje recibido

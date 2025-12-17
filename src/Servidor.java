@@ -25,7 +25,6 @@ public class Servidor {
         }
     }
 
-
     private static void procesarCliente(DatagramSocket socket, DatagramPacket paquete) {
         try {
             // se obtiene el mensaje recibido

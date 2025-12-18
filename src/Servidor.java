@@ -21,7 +21,8 @@ public class Servidor {
             socket.receive(paquete);
 
             // se crea un hilo
-            new Thread(() -> procesarCliente(socket, paquete)).start();
+           new Thread(() -> procesarCliente(socket, paquete)).start();
+
         }
     }
     private static void procesarCliente(DatagramSocket socket, DatagramPacket paquete) {
